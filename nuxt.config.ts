@@ -5,8 +5,12 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-purgecss'
   ],
+  purgecss: {
+    enabled: true
+  },
   ui: {
     icons: ['heroicons', 'simple-icons'],
     safelistColors: ['primary', 'red', 'orange', 'green']
